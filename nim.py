@@ -70,7 +70,7 @@ def nim(pile, turn, strategy):
 
             take = int(input("How many marbles will you take? "))
             # Force the user to take a legal number of marbles.
-            if take > pile / 2:
+            if take > pile / 2 or take < 0:
                 print('You cannot take that many marbles')
                 turn = HUMAN
 
